@@ -1,3 +1,6 @@
+name: Test Github Action
+run-name: Test Action
+
 on: [push]
 
 jobs:
