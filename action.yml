@@ -26,6 +26,7 @@ runs:
       shell: bash
 
     - run: |
+        chmod +x goodbye.sh
         bash goodbye.sh
       shell: bash
       env:
