@@ -8,6 +8,12 @@ jobs:
     name: A job to say hello
     steps:
       - uses: actions/checkout@v4
+      - name: Print something
+        run: |
+          pwd
+          ls -al
+          uname -a
+          
       - id: foo
         uses: bitestream/ai@v1
         with:
