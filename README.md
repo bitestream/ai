@@ -2,7 +2,7 @@
 
 [![Discord](https://img.shields.io/badge/Join%20us%20on-Discord-blue?logo=discord&style=flat-square)](https://discord.gg/GsXnASn26c)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub](https://img.shields.io/github/last-commit/biterabbitai/ai-pr-reviewer/main?style=flat-square)](https://github.com/biterabbitai/ai-pr-reviewer/commits/main)
+[![GitHub](https://img.shields.io/github/last-commit/biteai/ai-pr-reviewer/main?style=flat-square)](https://github.com/biteai/ai-pr-reviewer/commits/main)
 
 ## Overview
 
@@ -88,7 +88,7 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: biterabbitai/ai-pr-reviewer@latest
+      - uses: biteai/ai-pr-reviewer@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -131,7 +131,7 @@ value. For example, to review docs/blog posts, you can use the following prompt:
 
 ```yaml
 system_message: |
-  You are `@biterabbitai` (aka `github-actions[bot]`), a language model
+  You are `@biteai` (aka `github-actions[bot]`), a language model
   trained by OpenAI. Your purpose is to act as a highly experienced
   DevRel (developer relations) professional with focus on cloud-native
   infrastructure.
@@ -162,11 +162,11 @@ system_message: |
 
 You can reply to a review comment made by this action and get a response based
 on the diff context. Additionally, you can invite the bot to a conversation by
-tagging it in the comment (`@biterabbitai`).
+tagging it in the comment (`@biteai`).
 
 Example:
 
-> @biterabbitai Please generate a test plan for this file.
+> @biteai Please generate a test plan for this file.
 
 Note: A review comment is a comment made on a diff or a file in the pull
 request.
@@ -178,7 +178,7 @@ to review documentation, you can ignore PRs that only change the documentation.
 To ignore a PR, add the following keyword in the PR description:
 
 ```text
-@biterabbitai: ignore
+@biteai: ignore
 ```
 
 ## Examples
@@ -248,7 +248,7 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: biterabbitai/ai-pr-reviewer@latest
+      - uses: biteai/ai-pr-reviewer@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
