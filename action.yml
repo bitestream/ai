@@ -26,11 +26,15 @@ runs:
       shell: bash
 
     - run: |
-        echo "$GITHUB_ACTION_PATH" >> $GITHUB_PATH
+        pwd
       shell: bash
 
-    - run: ｜
-        ${{ github.action_path }}/goodbye.sh
-      shell: sh
-      env:
-        person: "${{ inputs.who-to-greet }}"
+    - run: |
+        ls -al
+      shell: bash
+
+    # - run: ｜
+    #     ${{ github.action_path }}/goodbye.sh
+    #   shell: sh
+    #   env:
+    #     person: "${{ inputs.who-to-greet }}"
