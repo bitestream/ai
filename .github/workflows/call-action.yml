@@ -13,12 +13,12 @@ jobs:
           pwd
           ls -al
           uname -a
-          ls -al "$GITHUB_ACTION_PATH"
-          ls -al "${{ github.action_path }}"
+          echo $GITHUB_ACTION_PATH
+          echo "${{ github.action_path }}"
 
-      - id: foo
-        uses: bitestream/ai@v1
-        with:
-          who-to-greet: 'Someone else'
-      - run: echo random-number ${{ steps.foo.outputs.random-number }}
-        shell: bash
+      # - id: foo
+      #   uses: bitestream/ai@v1
+      #   with:
+      #     who-to-greet: 'Someone else'
+      # - run: echo random-number ${{ steps.foo.outputs.random-number }}
+      #   shell: bash
