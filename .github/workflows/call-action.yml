@@ -18,7 +18,7 @@ jobs:
 
       - id: foo
         # uses: bitestream/ai@v1
-        uses: ./action.yml
+        uses: ./
         with:
           who-to-greet: 'Someone else'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
