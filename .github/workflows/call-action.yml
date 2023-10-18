@@ -17,7 +17,8 @@ jobs:
           echo "${{ github.action_path }}"
 
       - id: foo
-        uses: bitestream/ai@v1
+        # uses: bitestream/ai@v1
+        uses: ./action.yml
         with:
           who-to-greet: 'Someone else'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
