@@ -13,7 +13,9 @@ jobs:
           pwd
           ls -al
           uname -a
-          
+          ls -al "$GITHUB_ACTION_PATH"
+          ls -al "${{ github.action_path }}"
+
       - id: foo
         uses: bitestream/ai@v1
         with:
