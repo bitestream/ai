@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: actions/hello-world-composite-action@v1
+        uses: bitestream/ai@v1
         with:
           who-to-greet: 'Someone else'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
