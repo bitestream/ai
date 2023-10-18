@@ -32,3 +32,8 @@ runs:
     - run: |
         ls -al
       shell: bash
+
+    - run: goodbye.sh
+      shell: bash
+      env:
+        person: "${{ inputs.who-to-greet }}"
