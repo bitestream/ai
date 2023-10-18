@@ -1,17 +1,17 @@
-name: Test Github Action
+name: Using Github Action
 
 on: [push]
 
 jobs:
-  hello_world_job:
+  use-ai:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Using Github Action
     steps:
       - uses: actions/checkout@v4
-      - id: foo
+      - id: ai
         uses: bitestream/ai@v1  #use marketplace
         # uses: ./ # test locally
         with:
-          who-to-greet: 'Someone else'
-      - run: echo random-number ${{ steps.foo.outputs.random-number }}
+          engineer: 'Someone else'
+      - run: echo random-number ${{ steps.ai.outputs.random-number }}
         shell: bash

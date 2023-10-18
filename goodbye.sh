@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo "$(date) Goodbye $person."
+echo "$(date) Goodbye $engineer."

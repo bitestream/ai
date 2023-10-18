@@ -1,19 +1,27 @@
-name: "Hello World"
-description: "Greet someone"
+name: "Bite AI"
+
+description: "Bite AI For Everything"
+
+branding:
+  icon: "award"
+  color: "green"
+
 inputs:
-  who-to-greet:
-    description: "Who to greet"
+  engineer:
+    description: "engineer name"
     required: true
     default: "Weldon Wang"
+
 outputs:
   random-number:
     description: "Random number"
     value: ${{ steps.random-number-generator.outputs.random-number }}
+
 runs:
   using: "composite"
   steps:
     - run: |
-        echo Hello ${{ inputs.who-to-greet }}.
+        echo Hello ${{ inputs.engineer }}.
       shell: bash
 
     - id: random-number-generator
@@ -28,4 +36,4 @@ runs:
     - run: goodbye.sh
       shell: bash
       env:
-        person: "${{ inputs.who-to-greet }}"
+        engineer: "${{ inputs.engineer }}"
