@@ -8,17 +8,9 @@ jobs:
     name: A job to say hello
     steps:
       - uses: actions/checkout@v4
-      - name: Print something
-        run: |
-          pwd
-          ls -al
-          uname -a
-          echo $GITHUB_ACTION_PATH
-          echo "${{ github.action_path }}"
-
       - id: foo
-        # uses: bitestream/ai@v1
-        uses: ./
+        uses: bitestream/ai@v1  #use marketplace
+        # uses: ./ # test locally
         with:
           who-to-greet: 'Someone else'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
