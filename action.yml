@@ -23,12 +23,13 @@ runs:
 
     - run: |
         echo "${{ github.action_path }}" >> $GITHUB_PATH
+        pwd
+        uname -a
+        ls -al
       shell: bash
 
     - run: |
-        uname -a
-        ls -al
         ./goodbye.sh
       shell: bash
-      env:
-        person: "${{ inputs.who-to-greet }}"
+      # env:
+      #   person: "${{ inputs.who-to-greet }}"
