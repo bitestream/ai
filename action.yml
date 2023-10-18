@@ -32,9 +32,3 @@ runs:
     - run: |
         ls -al
       shell: bash
-
-    # - run: ｜
-    #     ${{ github.action_path }}/goodbye.sh
-    #   shell: sh
-    #   env:
-    #     person: "${{ inputs.who-to-greet }}"
