@@ -25,8 +25,7 @@ runs:
         echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
 
-    - name: Print something
-      shell: bash
+    - shell: bash
       run: |
         pwd && ls -al && uname -a
 
