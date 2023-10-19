@@ -1,9 +1,11 @@
-name: 'AI-based PR Reviewer & Summarizer with Chat Capabilities'
-description: 'AI-based PR Reviewer & Summarizer with Chat Capabilities'
+name: "Bite AI"
+
+description: "Bite AI For Everything"
+
 branding:
-  icon: 'git-merge'
-  color: 'orange'
-author: 'CodeRabbit LLC'
+  icon: "award"
+  color: "green"
+
 inputs:
   debug:
     required: false
