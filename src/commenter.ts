@@ -7,40 +7,40 @@ import {octokit} from './octokit'
 const context = github_context
 const repo = context.repo
 
-export const COMMENT_GREETING = `${getInput('bot_icon')}   CodeRabbit`
+export const COMMENT_GREETING = `${getInput('bot_icon')}   BiteAI`
 
 export const COMMENT_TAG =
-  '<!-- This is an auto-generated comment by OSS CodeRabbit -->'
+  '<!-- This is an auto-generated comment by OSS BiteAI -->'
 
 export const COMMENT_REPLY_TAG =
-  '<!-- This is an auto-generated reply by OSS CodeRabbit -->'
+  '<!-- This is an auto-generated reply by OSS BiteAI -->'
 
 export const SUMMARIZE_TAG =
-  '<!-- This is an auto-generated comment: summarize by OSS CodeRabbit -->'
+  '<!-- This is an auto-generated comment: summarize by OSS BiteAI -->'
 
 export const IN_PROGRESS_START_TAG =
-  '<!-- This is an auto-generated comment: summarize review in progress by OSS CodeRabbit -->'
+  '<!-- This is an auto-generated comment: summarize review in progress by OSS BiteAI -->'
 
 export const IN_PROGRESS_END_TAG =
-  '<!-- end of auto-generated comment: summarize review in progress by OSS CodeRabbit -->'
+  '<!-- end of auto-generated comment: summarize review in progress by OSS BiteAI -->'
 
 export const DESCRIPTION_START_TAG =
-  '<!-- This is an auto-generated comment: release notes by OSS CodeRabbit -->'
+  '<!-- This is an auto-generated comment: release notes by OSS BiteAI -->'
 export const DESCRIPTION_END_TAG =
-  '<!-- end of auto-generated comment: release notes by OSS CodeRabbit -->'
+  '<!-- end of auto-generated comment: release notes by OSS BiteAI -->'
 
-export const RAW_SUMMARY_START_TAG = `<!-- This is an auto-generated comment: raw summary by OSS CodeRabbit -->
+export const RAW_SUMMARY_START_TAG = `<!-- This is an auto-generated comment: raw summary by OSS BiteAI -->
 <!--
 `
 export const RAW_SUMMARY_END_TAG = `-->
-<!-- end of auto-generated comment: raw summary by OSS CodeRabbit -->`
+<!-- end of auto-generated comment: raw summary by OSS BiteAI -->`
 
-export const SHORT_SUMMARY_START_TAG = `<!-- This is an auto-generated comment: short summary by OSS CodeRabbit -->
+export const SHORT_SUMMARY_START_TAG = `<!-- This is an auto-generated comment: short summary by OSS BiteAI -->
 <!--
 `
 
 export const SHORT_SUMMARY_END_TAG = `-->
-<!-- end of auto-generated comment: short summary by OSS CodeRabbit -->`
+<!-- end of auto-generated comment: short summary by OSS BiteAI -->`
 
 export const COMMIT_ID_START_TAG = '<!-- commit_ids_reviewed_start -->'
 export const COMMIT_ID_END_TAG = '<!-- commit_ids_reviewed_end -->'

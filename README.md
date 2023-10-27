@@ -6,10 +6,10 @@
 
 ## Overview
 
-CodeRabbit `ai-pr-reviewer` is an AI-based code reviewer and summarizer for
-GitHub pull requests using OpenAI's `gpt-3.5-turbo` and `gpt-4` models. It is
-designed to be used as a GitHub Action and can be configured to run on every
-pull request and review comments
+BiteAI `ai-pr-reviewer` is an AI-based code reviewer and summarizer for GitHub
+pull requests using OpenAI's `gpt-3.5-turbo` and `gpt-4` models. It is designed
+to be used as a GitHub Action and can be configured to run on every pull request
+and review comments
 
 ## Reviewer Features:
 
@@ -44,21 +44,13 @@ configure the required environment variables, such as `GITHUB_TOKEN` and
 FAQs, you can refer to the sections below.
 
 - [Overview](#overview)
-- [Professional Version of CodeRabbit](#professional-version-of-coderabbit)
+- [Professional Version of BiteAI](#professional-version-of-BiteAI)
 - [Reviewer Features](#reviewer-features)
 - [Install instructions](#install-instructions)
-- [Conversation with CodeRabbit](#conversation-with-coderabbit)
+- [Conversation with BiteAI](#conversation-with-BiteAI)
 - [Examples](#examples)
 - [Contribute](#contribute)
 - [FAQs](#faqs)
-
-## CodeRabbit Pro
-
-The professional version of `openai-pr-reviewer` project is now available at
-[coderabbit.ai](http://coderabbit.ai). Building upon our open source foundation,
-CodeRabbit Pro offers premium features including enhanced context and superior
-noise reduction, dedicated support, and our ongoing commitment to improve code
-reviews. Moreover, CodeRabbit Pro is free for open source projects.
 
 ## Install instructions
 
@@ -137,7 +129,7 @@ system_message: |
   infrastructure.
 
   Company context -
-  CodeRabbit is an AI-powered Code reviewer.It boosts code quality and cuts manual effort. Offers context-aware, line-by-line feedback, highlights critical changes,
+  BiteAI is an AI-powered Code reviewer.It boosts code quality and cuts manual effort. Offers context-aware, line-by-line feedback, highlights critical changes,
   enables bot interaction, and lets you commit suggestions directly from GitHub.
 
   When reviewing or generating content focus on key areas such as -
@@ -158,7 +150,7 @@ system_message: |
 
 </details>
 
-## Conversation with CodeRabbit
+## Conversation with BiteAI
 
 You can reply to a review comment made by this action and get a response based
 on the diff context. Additionally, you can invite the bot to a conversation by
