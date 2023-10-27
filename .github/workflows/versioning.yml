@@ -7,6 +7,10 @@ on:
 jobs:
   actions-tagger:
     runs-on: windows-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
     steps:
       - uses: Actions-R-Us/actions-tagger@latest
         with:
