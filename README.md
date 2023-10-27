@@ -52,14 +52,6 @@ FAQs, you can refer to the sections below.
 - [Contribute](#contribute)
 - [FAQs](#faqs)
 
-## BiteAI Pro
-
-The professional version of `openai-pr-reviewer` project is now available at
-[BiteAI.ai](http://BiteAI.ai). Building upon our open source foundation, BiteAI
-Pro offers premium features including enhanced context and superior noise
-reduction, dedicated support, and our ongoing commitment to improve code
-reviews. Moreover, BiteAI Pro is free for open source projects.
-
 ## Install instructions
 
 `ai-pr-reviewer` runs as a GitHub Action. Add the below file to your repository
