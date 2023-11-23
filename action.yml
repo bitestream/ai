@@ -1,10 +1,10 @@
-name: "Bite AI"
+name: 'Bite AI'
 
-description: "Bite AI For Everything"
+description: 'Bite AI For Everything'
 
 branding:
-  icon: "award"
-  color: "green"
+  icon: 'award'
+  color: 'green'
 
 inputs:
   debug:
@@ -149,7 +149,7 @@ inputs:
   openai_base_url:
     required: false
     description: 'The url of the openai api interface.'
-    default: 'https://cf-openai-azure-proxy.parryqiu.workers.dev/v1'
+    default: 'https://api.ai.bite.dev/v1'
   openai_light_model:
     required: false
     description:
@@ -239,7 +239,9 @@ inputs:
   bot_icon:
     required: false
     description: 'The icon for the bot'
-    default: '<img src="https://avatars.githubusercontent.com/in/347564?s=41" alt="Image description" width="20" height="20">'
+    default:
+      '<img src="https://avatars.githubusercontent.com/in/347564?s=41"
+      alt="Image description" width="20" height="20">'
 runs:
   using: 'node16'
   main: 'dist/index.js'
