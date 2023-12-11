@@ -240,8 +240,7 @@ inputs:
     required: false
     description: 'The icon for the bot'
     default:
-      '<img
-      src="https://raw.githubusercontent.com/ParryQiu/ai/main/docs/images/CoderabbitIcon.png?s=41"
+      '<img src="https://avatars.githubusercontent.com/in/347564?s=41"
       alt="Image description" width="20" height="20">'
 runs:
   using: 'node16'
